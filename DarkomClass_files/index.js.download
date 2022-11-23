@@ -1,0 +1,15 @@
+window.dataLayer = window.dataLayer || [];
+
+function gtag() {
+  dataLayer.push(arguments);
+}
+gtag('js', new Date());
+gtag('config', 'UA-166634384-2', {
+  send_page_view: false,
+  custom_map: {
+    dimension1: 'client_id',
+    dimension2: 'user_id',
+    dimension3: 'meeting_id',
+    dimension4: 'device_id'
+  }
+});
